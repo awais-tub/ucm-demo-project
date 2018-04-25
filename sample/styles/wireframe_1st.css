@@ -1,0 +1,187 @@
+.globalcontainer{
+
+	min-height: 100vh;
+}
+
+.sidebar{
+
+	background-color:  RGB(52,63,83);
+	color: white;
+	min-height: 100vh;
+	display: flex;
+	align-items: flex-center;
+	flex-direction: column;
+}
+.end_container{
+	align-self: flex-end;
+ 
+}
+.first{
+	font-size:1em;
+
+
+}
+.f_second{
+font-size:0.6em;
+
+}
+.third{
+
+font-size:0.7em;
+color:RGB(147,166,198);
+
+}
+.forth{
+	color:white;
+}
+.form1{
+	background-color:  RGB(52,63,83);
+	color: white;
+	height: 35px;
+}
+
+}
+.img1{
+
+width: 30px;
+height: 16px;
+
+}
+.header{
+/* border: 1px solid #f1f1f1; */
+}
+.globalcontainer2{
+
+	background-color:RGB(237,242,246);
+	
+}
+.heading{
+
+	color:RGB(149,163,198);
+}
+.inner_container{
+
+	margin: 50px 50px 50px 50px;
+
+	background-color:white;
+
+	
+}
+.right_head_corner{
+	font-size:8px;
+
+
+}
+.inner_header{
+	border-bottom: 1px solid #f1f1f1;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.text_content{
+font-size: 18px;
+font-style: bold;
+color: rgb(190, 190, 190);
+padding-left: 30px;
+
+
+}
+.right{
+	background-color: rgb(31, 138, 232);
+	height: 10px;
+}
+.left{
+	background-color: rgb( 217,217,217);
+	height: 10px;
+}
+.fifth{
+
+font-size:0.7em;
+color:RGB(147,166,198);
+
+}
+
+.sixth{
+	font-size:0.7em;
+color:RGB(69,127,234);
+}
+.seven{
+
+	font-size:0.8em;
+	font-weight: bold;
+color:RGB(69,127,234);
+}
+.eight{
+	 border: 1px solid #f1f1f1 ;
+
+}
+.round_border{
+
+/*border-width: 10px;*/
+border: 1px solid #f1f1f1;
+border-radius: 10px;
+background-color: rgb(168,209,139);
+color: black;
+
+
+}
+.nine{
+  border-top:  1px solid #f1f1f1 ;
+  height:30px;
+
+}
+.ten{
+font-size: 16px;
+font-style: bold;
+color: rgb(117, 135, 157);
+
+
+}
+.eleven{
+
+	display:flex;
+	align-items: center;
+
+	padding-top: 5px;
+	 padding-bottom: 3px;
+	 border-top: 1px solid #f1f1f1;
+}
+.eleven1{
+	height: 200px;
+
+	display:flex;
+	align-items: center;
+
+	padding-top: 5px;
+	 padding-bottom: 3px;
+	 border-top: 1px solid #f1f1f1;
+}
+.round_border1{
+
+border: 1px solid #f1f1f1;
+border-radius: 10px;
+background-color: rgb(245,204,176);
+color: black;
+
+
+}
+.twelve{
+
+font-size: 16px;
+font-weight: bold;
+color: rgb(123, 139, 155);
+
+}
+.image1{
+height: 20px ;
+width: 20px;
+
+}
+.thirten{
+	font-size: .8em;
+font-style: italic;
+color:RGB(226,226,226);
+text-decoration:underline;
+}
+.adding{
+	color: rgb(190, 190, 190);
+}

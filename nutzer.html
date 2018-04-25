@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/nutzer.css" type="text/css" />
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css" type="text/css" />
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <script src="js/bootstrap.js">
+    </script>
+    <script src="js/jquery.dataTables.min.js">
+    </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class=" container ">
+        <!--first section-->
+
+
+        <div>
+            <h1>
+                Nutzerliste
+            </h1>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-3 mr-1  active">
+                <div class="row">
+                    <div class="col-md-5">active:17800
+
+                    </div>
+                    <div class="col-md-7">Worked last 30 days:10000
+
+                    </div>
+                    <div class="col-md-5">Verfied:17880
+
+                    </div>
+                    <div class="col-md-7">No video:10000
+
+                    </div>
+                    <div class="col-md-5">Unverified:10
+
+                    </div>
+                    <div class="col-md-7">No sedcard:1000
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md mr-1 active">
+                <div class="mt-2">
+                    <i class="fas fa-microphone fa-lg"></i>
+
+
+                </div>
+                <div>
+                    <i class="fas fa-headphones fa-lg"></i>
+
+
+
+
+                </div>
+            </div>
+            <div class="col-md-3  active">
+                <div class="row ">
+                    <div class="col-md-7 mt-2">
+                        <div>
+                            <i class="fas fa-square-full deactivated"></i> Deactivated staff
+                        </div>
+                        <div>
+                            <i class="fas fa-square-full activated"></i> Verified staff
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div>
+                            <i class="fas fa-check-circle verfied"></i> verified
+
+                        </div>
+                        <div>
+                            <i class="fas fa-times-circle deactivated "></i> doesn't exist
+
+                        </div>
+                        <div>
+                            <i class="fas fa-question-circle activated"></i> unverified
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!--collapse header-->
+
+
+        <div class="row header  ">
+            <div class="col-md-1 pt-2 ">
+                <a href="#demo" class="filter" data-toggle="collapse">
+                    <i class="fas fa-angle-up  "></i> Filter
+                </a>
+            </div>
+            <div class="col-md-2 pt-2  offset-md-3 ">
+                <select class=" select picker  col-md-12 ">
+                    <option>Action</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                </select>
+            </div>
+            <div class="col-md-3 pt-1  ">
+                <input class="col-md-12 form-control input-sm " type="text" placeholder="Search Email...">
+            </div>
+            <div class="col-md-3 pt-1  ">
+                <input class="col-md-12 form-control input-sm " type="text" placeholder="Search any Parameter...">
+            </div>
+
+
+
+        </div>
+
+
+        <!--collapse body-->
+
+        <div class="row active  collapse pt-2  " id="demo">
+            <div class="col-md-3   ">
+
+                <div>
+                    jobtype
+
+                </div>
+                <div class="d-flex">
+                    <div class="form-box form-check-inline col ">
+                        <input type="checkbox">Runner
+                    </div>
+                    <div class="form-box form-check-inline col  ">
+                        <input type="checkbox">Service
+                    </div>
+                    <div class="form-box form-check-inline col">
+                        <input type="checkbox">...
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="form-box form-check-inline col-md ">
+                        <input type="checkbox">Security
+                    </div>
+                    <div class="form-box form-check-inline col-md ">
+                        <input type="checkbox">...
+                    </div>
+                    <div class="form-box form-check-inline col-md">
+                        <input type="checkbox">...
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="form-box form-check-inline col-md ">
+                        <input type="checkbox">...
+                    </div>
+                    <div class="form-box form-check-inline col-md ">
+                        <input type="checkbox">...
+                    </div>
+                    <div class="form-box form-check-inline col-md">
+                        <input type="checkbox">...
+                    </div>
+                </div>
+                <div class="mt-2">
+                    Availability
+                </div>
+                <div class="d-flex">
+                    <div class=" mr-2">
+                        <input type="date">
+                    </div>
+
+                    -
+
+                    <div class=" ml-2">
+                        <input type="date">
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+            <div class="col-md-6 ">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <select class=" selectpicker  col-md ">
+                            <option>Search Certificate...</option>
+                            <option>option 2</option>
+                            <option>option 3</option>
+                        </select>
+
+                        <select class="selectpicker   mt-1 col-md">
+                                <option >Search  Accent</option>
+                                <option value="1">keinen</option>
+                                <option value="2">italian</option>
+                                <option value="3">French</option>
+                                <option value="3">American</option>
+                                <option value="3">Indian</option>
+                              </select>
+
+
+                    </div>
+
+
+                    <div class="col-md-4 ">
+                        <div> Billing complete
+                        </div>
+                        <div class="row">
+                            <div class="form-box form-check-inline col-md">
+                                <input type="checkbox">Yes
+                            </div>
+                            <div class="form-box form-check-inline col-md">
+                                <input type="checkbox">No
+                            </div>
+                        </div>
+
+                        <div class="mt-2"> Can Work
+                        </div>
+                        <div class="row">
+                            <div class="form-box form-check-inline col-md">
+                                <input type="checkbox">Yes
+                            </div>
+                            <div class="form-box form-check-inline col-md">
+                                <input type="checkbox">No
+                            </div>
+                        </div>
+                        <div class="mt-2"> Sedwork
+                        </div>
+                        <div class="row">
+                            <div class="form-box form-check-inline col-md">
+                                <input type="checkbox">Yes
+                            </div>
+                            <div class="form-box form-check-inline col-md">
+                                <input type="checkbox">No
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div> Verified
+                        </div>
+                        <div class="row">
+                            <div class="form-box form-check-inline col-md">
+                                <input type="checkbox">Yes
+                            </div>
+                            <div class="form-box form-check-inline col-md">
+                                <input type="checkbox">No
+                            </div>
+                        </div>
+
+                        <div class="mt-2"> Active
+                        </div>
+                        <div class="row">
+                            <div class="form-box form-check-inline col-md">
+                                <input type="checkbox">Yes
+                            </div>
+                            <div class="form-box form-check-inline col-md">
+                                <input type="checkbox">No
+                            </div>
+                        </div>
+                        <div class="mt-2"> Video
+                        </div>
+                        <div class="row">
+                            <div class="form-box form-check-inline col-md">
+                                <input type="checkbox">Yes
+                            </div>
+                            <div class="form-box form-check-inline col-md">
+                                <input type="checkbox">No
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="">
+                    License
+
+                </div>
+                <div class="row">
+                    <div class="form-box form-check-inline col-md ">
+                        <input type="checkbox">PKW
+                    </div>
+                    <div class="form-box form-check-inline col-md ">
+                        <input type="checkbox">LKW
+                    </div>
+                    <div class="form-box form-check-inline col-md">
+                        <input type="checkbox">...
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-box form-check-inline col-md ">
+                        <input type="checkbox">...
+                    </div>
+                    <div class="form-box form-check-inline col-md ">
+                        <input type="checkbox">...
+                    </div>
+                    <div class="form-box form-check-inline col-md">
+                        <input type="checkbox">...
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-box form-check-inline col-md ">
+                        <input type="checkbox">...
+                    </div>
+                    <div class="form-box form-check-inline col-md ">
+                        <input type="checkbox">...
+                    </div>
+                    <div class="form-box form-check-inline col-md">
+                        <input type="checkbox">...
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="form-box form-check-inline col-md-4">
+                        <input type="checkbox">Car
+                    </div>
+                    <div class="form-box form-check-inline col-md-4">
+                        <input type="checkbox">No Car
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <a class="offset-md-9" href="#">
+                        <h6>Search </h6>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- buttons and data table -->
+
+        <div class="row mt-2">
+            <button type="button" class="btn btn-outline-dark btn-sm round" style="border-radius:50px;border-color: #ddd;">
+               <span>Haircolor:blond</span>  
+               <span><i class="fas fa-times ml-5"></i></span> </button>
+
+            <button type="button" class="btn btn-outline-dark btn-sm round ml-3" style="border-radius:50px;border-color: #ddd;">
+                    <span>Height:170cm-180cm</span>  
+                    <span><i class="fas fa-times ml-5"></i></span> </button>
+
+        </div>
+
+        <div class="row">
+            <p class="col-md-3 offset-md-9 vor-link">17883 Treffer | <a href="#" class="link">Anzeige:50 pro Seite</a></p>
+        </div>
+        <div class="row table-responsive-md mt-2">
+
+            <table id="employ" class="table table-bordered " style="font-size:11px;">
+
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="form-box ">
+                                <input type="checkbox">
+                            </div>
+                        </th>
+                        <th>Contact</th>
+                        <th class="n-pad"><input class="table_1" data-toggle="tooltip" title="refresh with enter clear button appears" type="text" placeholder="Staff id"> </th>
+                        <th class="n-pad"><input class="table_1" data-toggle="tooltip" title="refresh with enter clear button appears" type="text" placeholder="Last name"> </th>
+                        <th class="n-pad"><input class="table_1" data-toggle="tooltip" title="refresh with enter clear button appears" type="text" placeholder="First name"> </th>
+
+                        <th class="n-pad"><input class="table_1" data-toggle="tooltip" title="refresh with enter clear button appears" type="text" placeholder="Phone number"> </th>
+                        <th class="n-pad"><select class="select picker  table_1 tab-2 ">
+                            <option >both</option>
+                            <option>m</option>
+                            <option>w</option>
+                            
+                        </select></th>
+                        <th class="n-pad"><input class="table_1" data-toggle="tooltip" title="refresh with enter clear button appears" type="text" placeholder="Work location"> </th>
+                        <th class="n-pad"><input class="table_1" data-toggle="tooltip" title="refresh with enter clear button appears" type="text" placeholder="Location"> </th>
+                        <th>Jobtypes</th>
+                        <th>Languages</th>
+                        <th>Work_Days</th>
+                        <th class="n-pad"><select class="select picker  table_1 tab-2 ">
+                                <option >all</option>
+                                <option>5</option>
+                                <option>4</option>
+                                
+                            </select></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="form-box ">
+                                <input type="checkbox">
+                            </div>
+                        </td>
+                        <td>
+                            <i class="far fa-envelope popover-dialog"></i>
+                            <i class="fas fa-mobile-alt popover-dialog"></i>
+                            <i class="fas fa-phone-square popover-dialog"></i>
+                        </td>
+                        <td>2234</td>
+                        <td>guellil
+                            <i class="fas fa-download"></i>
+
+
+                        </td>
+                        <td>Amin</td>
+                        <td>017682223031
+                            <i class="fas fa-check-circle verfied"></i>
+                        </td>
+                        <td>m</td>
+                        <td>Berlin/Hamburg/..</td>
+                        <td>Berlin,Berlin</td>
+                        <td>ger/eng</td>
+                        <td>ger/eng</td>
+                        <td>124</td>
+                        <td>5 <i class="fas fa-star fa-sm"></i>
+
+                        </td>
+
+
+                    </tr>
+
+                    <tr class="table-active">
+                        <td>
+                            <div class="form-box ">
+                                <input type="checkbox">
+                            </div>
+                        </td>
+                        <td><i class="far fa-envelope"></i>
+                            <i class="fas fa-mobile-alt"></i>
+
+
+                            <i class="fas fa-phone-square phone"></i>
+
+
+                        </td>
+                        <td>2233</td>
+                        <td>Ruhe
+                            <i class="fas fa-download"></i>
+
+
+                        </td>
+                        <td>Raisa</td>
+                        <td>017688239232
+                            <i class="fas fa-check-circle verfied"></i>
+                        </td>
+                        <td>m</td>
+                        <td>Berlin/Hamburg/..</td>
+                        <td>Berlin,Koln</td>
+                        <td><i class="fab fa-delicious fa-lg"></i>
+
+                        </td>
+                        <td>ger/eng</td>
+                        <td>43</td>
+                        <td>4.5 <i class="fas fa-star fa-sm"></i>
+
+                        </td>
+
+
+                    </tr>
+
+                    <tr class="table-warning">
+                        <td>
+                            <div class="form-box ">
+                                <input type="checkbox">
+                            </div>
+                        </td>
+                        <td><i class="far fa-envelope"></i>
+                            <i class="fas fa-mobile-alt"></i>
+
+
+                            <i class="fas fa-phone-square phone"></i>
+
+
+                        </td>
+                        <td>2236</td>
+                        <td>Molloy
+                            <i class="fas fa-download"></i>
+
+
+                        </td>
+                        <td>Denise</td>
+                        <td>017682389233
+                            <i class="fas fa-check-circle verfied"></i>
+                        </td>
+                        <td>w</td>
+                        <td>Berlin</td>
+                        <td>Berlin</td>
+                        <td>ger/eng</td>
+                        <td>ger/eng</td>
+                        <td>0</td>
+                        <td>0 <i class="fas fa-star fa-sm"></i>
+
+                        </td>
+
+
+                    </tr>
+
+                    <tr class="table-danger">
+                        <td>
+                            <div class="form-box ">
+                                <input type="checkbox">
+                            </div>
+                        </td>
+                        <td><i class="far fa-envelope"></i>
+                            <i class="fas fa-mobile-alt"></i>
+
+
+                            <i class="fas fa-phone-square phone"></i>
+
+
+                        </td>
+                        <td>2230</td>
+                        <td>Donner
+                            <i class="fas fa-download"></i>
+
+
+                        </td>
+                        <td>Frank</td>
+                        <td>0176 82339236 <i class="fas fa-times-circle deactivated "></i></td>
+                        <td>w</td>
+                        <td>Berlin</td>
+                        <td>Berlin</td>
+                        <td><i class="fab fa-delicious fa-lg"></i></td>
+                        <td>ger/eng</td>
+                        <td>0</td>
+                        <td>0 <i class="fas fa-star fa-sm"></i>
+
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-box ">
+                                <input type="checkbox">
+                            </div>
+                        </td>
+                        <td><i class="far fa-envelope"></i>
+                            <i class="fas fa-mobile-alt "></i>
+
+
+                            <i class="fas fa-phone-square phone"></i>
+
+
+
+                        </td>
+                        <td>2235</td>
+                        <td>Awais
+                            <i class="fas fa-download"></i>
+
+
+                        </td>
+                        <td>Shafiq</td>
+                        <td>017682343230
+                            <i class="fas fa-check-circle verfied"></i>
+                        </td>
+                        <td>m</td>
+                        <td>Berlin/Hamburg/..</td>
+                        <td>Berlin,Berlin</td>
+                        <td>ger/eng</td>
+                        <td>ger/eng</td>
+                        <td>122</td>
+                        <td>5 <i class="fas fa-star fa-sm"></i>
+
+                        </td>
+
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    </div>
+
+    <script>
+        function getDialogData() {
+            return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
+                '<tr>' +
+                '<td>Full name:</td>' +
+                '<td>Jsd</td>' +
+                '</tr>' +
+                '<tr>' +
+                '<td>Extension number:</td>' +
+                '<td>asd</td>' +
+                '</tr>' +
+                '<tr>' +
+                '<td>Extra info:</td>' +
+                '<td>And any further details here (images etc)...</td>' +
+                '</tr>' +
+                '</table>';
+        }
+        $(document).ready(function() {
+            var table = $('#employ').DataTable({
+                "iDisplayLength": 4
+            });
+            $('[data-toggle="tooltip"]').tooltip();
+            $(".popover-dialog").on('click', function() {
+                var tr = $(this).closest('tr');
+                var row = table.row(tr);
+
+                if (row.child.isShown()) {
+                    row.child.hide();
+                } else {
+                    row.child(getDialogData()).show();
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

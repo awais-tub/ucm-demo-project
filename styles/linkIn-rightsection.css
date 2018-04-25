@@ -1,0 +1,54 @@
+.drop-down{
+	position: sticky;
+}
+.button-5{
+	line-height: 24px;
+    font-weight: 550;
+    font-size: 16px;
+    font-family: Arial;
+    position: relative;
+    color: #fff;
+    margin: 0;
+    display: block;
+    background: #0084bf;
+    padding: 12px 24px;
+    width: 100%;
+    text-align: left;
+    border: 0;
+
+}
+.caret{
+	margin-left: 60px;
+}
+.edit{
+	line-height: 24px;
+    font-weight: 550;
+    font-size: 15px;
+    font-family: Arial;
+    position: relative;
+    color: #626262;
+
+    margin: 0;
+    display: block;
+   background-color: #F5F5F5;
+    padding: 12px 24px;
+    width: 100%;
+    text-align: left;
+    border: 2px solid #D0D0D0;
+    margin-top: 8px;
+}
+.link2{
+	color: #626262;
+	font-weight: 550;
+    font-size: 15px;
+    font-family: Arial;
+    text-decoration: none;
+}
+.ques1{
+	margin-left: 55px;
+}
+.ques2{
+	margin-left: 13px;
+}
+
+
