@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="styles/nutzer.css" type="text/css" />
+    <link rel="stylesheet" href="css/nutzer.css" type="text/css" />
     <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
     <link rel="stylesheet" href="css/jquery.dataTables.min.css" type="text/css" />
@@ -201,8 +201,8 @@
                             <option>option 2</option>
                             <option>option 3</option>
                         </select>
-
-                        <select class="selectpicker   mt-1 col-md">
+                        <div class="Accent">
+                            <select class=" scroll mt-1 col-md" name="sets">
                                 <option >Search  Accent</option>
                                 <option value="1">keinen</option>
                                 <option value="2">italian</option>
@@ -210,7 +210,7 @@
                                 <option value="3">American</option>
                                 <option value="3">Indian</option>
                               </select>
-
+                        </div>
 
                     </div>
 
@@ -342,22 +342,20 @@
         <!-- buttons and data table -->
 
         <div class="row mt-2">
-            <button type="button" class="btn btn-outline-dark btn-sm round" style="border-radius:50px;border-color: #ddd;">
+            <button type="button" class="btn btn-outline-dark btn-sm pb-1  round">
                <span>Haircolor:blond</span>  
-               <span><i class="fas fa-times ml-5"></i></span> </button>
+               <span><i class="fas fa-times "></i></span> </button>
 
-            <button type="button" class="btn btn-outline-dark btn-sm round ml-3" style="border-radius:50px;border-color: #ddd;">
-                    <span>Height:170cm-180cm</span>  
-                    <span><i class="fas fa-times ml-5"></i></span> </button>
+            <button type="button" class="btn btn-outline-dark btn-sm   round ml-3">
+                    <span >Height:170cm-180cm</span>  
+                    <span><i class="fas fa-times "></i></span> </button>
 
         </div>
 
-        <div class="row">
-            <p class="col-md-3 offset-md-9 vor-link">17883 Treffer | <a href="#" class="link">Anzeige:50 pro Seite</a></p>
-        </div>
+
         <div class="row table-responsive-md mt-2">
 
-            <table id="employ" class="table table-bordered " style="font-size:11px;">
+            <table id="employ" class="table table-bordered ">
 
                 <thead>
                     <tr>
@@ -367,24 +365,24 @@
                             </div>
                         </th>
                         <th>Contact</th>
-                        <th class="n-pad"><input class="table_1" data-toggle="tooltip" title="refresh with enter clear button appears" type="text" placeholder="Staff id"> </th>
-                        <th class="n-pad"><input class="table_1" data-toggle="tooltip" title="refresh with enter clear button appears" type="text" placeholder="Last name"> </th>
-                        <th class="n-pad"><input class="table_1" data-toggle="tooltip" title="refresh with enter clear button appears" type="text" placeholder="First name"> </th>
+                        <th class="n-pad"><input class="table_1 input-sm" data-toggle="tooltip" title="refresh with enter clear button appears" type="text" placeholder="Staff id"> </th>
+                        <th class="n-pad"><input class="table_1 input-sm" data-toggle="tooltip" title="refresh with enter clear button appears" type="text" placeholder="Last name"> </th>
+                        <th class="n-pad"><input class="table_1 input-sm" data-toggle="tooltip" title="refresh with enter clear button appears" type="text" placeholder="First name"> </th>
 
-                        <th class="n-pad"><input class="table_1" data-toggle="tooltip" title="refresh with enter clear button appears" type="text" placeholder="Phone number"> </th>
+                        <th class="n-pad"><input class="table_1 input-sm" data-toggle="tooltip" title="refresh with enter clear button appears" type="text" placeholder="Phone number"> </th>
                         <th class="n-pad"><select class="select picker  table_1 tab-2 ">
-                            <option >both</option>
+                            <option >Both</option>
                             <option>m</option>
                             <option>w</option>
                             
                         </select></th>
-                        <th class="n-pad"><input class="table_1" data-toggle="tooltip" title="refresh with enter clear button appears" type="text" placeholder="Work location"> </th>
-                        <th class="n-pad"><input class="table_1" data-toggle="tooltip" title="refresh with enter clear button appears" type="text" placeholder="Location"> </th>
+                        <th class="n-pad"><input class="table_1 input-sm" data-toggle="tooltip" title="refresh with enter clear button appears" type="text" placeholder="Work location"> </th>
+                        <th class="n-pad"><input class="table_1 input-sm" data-toggle="tooltip" title="refresh with enter clear button appears" type="text" placeholder="Location"> </th>
                         <th>Jobtypes</th>
                         <th>Languages</th>
                         <th>Work_Days</th>
                         <th class="n-pad"><select class="select picker  table_1 tab-2 ">
-                                <option >all</option>
+                                <option >All</option>
                                 <option>5</option>
                                 <option>4</option>
                                 
@@ -395,16 +393,16 @@
                     <tr>
                         <td>
                             <div class="form-box ">
-                                <input type="checkbox">
+                                <input class="check" type="checkbox">
                             </div>
                         </td>
                         <td>
                             <i class="far fa-envelope popover-dialog"></i>
                             <i class="fas fa-mobile-alt popover-dialog"></i>
-                            <i class="fas fa-phone-square popover-dialog"></i>
+                            <i class="fas fa-phone-square phone popover-dialog"></i>
                         </td>
                         <td>2234</td>
-                        <td>guellil
+                        <td>Guellil
                             <i class="fas fa-download"></i>
 
 
@@ -416,7 +414,8 @@
                         <td>m</td>
                         <td>Berlin/Hamburg/..</td>
                         <td>Berlin,Berlin</td>
-                        <td>ger/eng</td>
+                        <td><img class="jb" src="images/jobtypes.png"></td>
+
                         <td>ger/eng</td>
                         <td>124</td>
                         <td>5 <i class="fas fa-star fa-sm"></i>
@@ -429,20 +428,20 @@
                     <tr class="table-active">
                         <td>
                             <div class="form-box ">
-                                <input type="checkbox">
+                                <input class="check" type="checkbox">
                             </div>
                         </td>
-                        <td><i class="far fa-envelope"></i>
-                            <i class="fas fa-mobile-alt"></i>
+                        <td><i class="far fa-envelope popover-dialog"></i>
+                            <i class="fas fa-mobile-alt popover-dialog"></i>
 
 
-                            <i class="fas fa-phone-square phone"></i>
+                            <i class="fas fa-phone-square phone popover-dialog"></i>
 
 
                         </td>
                         <td>2233</td>
                         <td>Ruhe
-                            <i class="fas fa-download"></i>
+                            <i class="fas fa-download "></i>
 
 
                         </td>
@@ -453,7 +452,10 @@
                         <td>m</td>
                         <td>Berlin/Hamburg/..</td>
                         <td>Berlin,Koln</td>
-                        <td><i class="fab fa-delicious fa-lg"></i>
+                        <td>
+                            <img class="jb-1" src="images/jobtypes.png">
+                            <i class="fab fa-delicious fa-lg ml-2"></i>
+
 
                         </td>
                         <td>ger/eng</td>
@@ -468,14 +470,14 @@
                     <tr class="table-warning">
                         <td>
                             <div class="form-box ">
-                                <input type="checkbox">
+                                <input class="check" type="checkbox">
                             </div>
                         </td>
-                        <td><i class="far fa-envelope"></i>
-                            <i class="fas fa-mobile-alt"></i>
+                        <td><i class="far fa-envelope popover-dialog"></i>
+                            <i class="fas fa-mobile-alt popover-dialog"></i>
 
 
-                            <i class="fas fa-phone-square phone"></i>
+                            <i class="fas fa-phone-square phone popover-dialog"></i>
 
 
                         </td>
@@ -492,7 +494,7 @@
                         <td>w</td>
                         <td>Berlin</td>
                         <td>Berlin</td>
-                        <td>ger/eng</td>
+                        <td><img class="jb" src="images/jobtypes.png"></td>
                         <td>ger/eng</td>
                         <td>0</td>
                         <td>0 <i class="fas fa-star fa-sm"></i>
@@ -505,14 +507,14 @@
                     <tr class="table-danger">
                         <td>
                             <div class="form-box ">
-                                <input type="checkbox">
+                                <input class="check" type="checkbox">
                             </div>
                         </td>
-                        <td><i class="far fa-envelope"></i>
-                            <i class="fas fa-mobile-alt"></i>
+                        <td><i class="far fa-envelope popover-dialog"></i>
+                            <i class="fas fa-mobile-alt popover-dialog"></i>
 
 
-                            <i class="fas fa-phone-square phone"></i>
+                            <i class="fas fa-phone-square phone popover-dialog"></i>
 
 
                         </td>
@@ -527,7 +529,7 @@
                         <td>w</td>
                         <td>Berlin</td>
                         <td>Berlin</td>
-                        <td><i class="fab fa-delicious fa-lg"></i></td>
+                        <td><i class="fab fa-delicious fa-lg jb "></i></td>
                         <td>ger/eng</td>
                         <td>0</td>
                         <td>0 <i class="fas fa-star fa-sm"></i>
@@ -539,11 +541,11 @@
                     <tr>
                         <td>
                             <div class="form-box ">
-                                <input type="checkbox">
+                                <input class="check" type="checkbox">
                             </div>
                         </td>
-                        <td><i class="far fa-envelope"></i>
-                            <i class="fas fa-mobile-alt "></i>
+                        <td><i class="far fa-envelope popover-dialog"></i>
+                            <i class="fas fa-mobile-alt popover-dialog "></i>
 
 
                             <i class="fas fa-phone-square phone"></i>
@@ -564,10 +566,217 @@
                         <td>m</td>
                         <td>Berlin/Hamburg/..</td>
                         <td>Berlin,Berlin</td>
-                        <td>ger/eng</td>
+                        <td> <img class="jb-1" src="images/jobtypes.png">
+                            <i class="fab fa-delicious fa-lg ml-2"></i></td>
                         <td>ger/eng</td>
                         <td>122</td>
                         <td>5 <i class="fas fa-star fa-sm"></i>
+
+                        </td>
+
+
+                    </tr>
+
+                    <tr class="table-danger">
+                        <td>
+                            <div class="form-box ">
+                                <input class="check" type="checkbox">
+                            </div>
+                        </td>
+                        <td><i class="far fa-envelope popover-dialog"></i>
+                            <i class="fas fa-mobile-alt popover-dialog"></i>
+
+
+                            <i class="fas fa-phone-square phone popover-dialog"></i>
+
+
+                        </td>
+                        <td>2230</td>
+                        <td>Donner
+                            <i class="fas fa-download"></i>
+
+
+                        </td>
+                        <td>Frank</td>
+                        <td>0176 82339236 <i class="fas fa-times-circle deactivated "></i></td>
+                        <td>w</td>
+                        <td>Berlin</td>
+                        <td>Berlin</td>
+                        <td><i class="fab fa-delicious fa-lg jb"></i></td>
+                        <td>ger/eng</td>
+                        <td>0</td>
+                        <td>0 <i class="fas fa-star fa-sm"></i>
+
+                        </td>
+
+
+                    </tr>
+
+                    <tr class="table-danger">
+                        <td>
+                            <div class="form-box ">
+                                <input class="check" type="checkbox">
+                            </div>
+                        </td>
+                        <td><i class="far fa-envelope popover-dialog"></i>
+                            <i class="fas fa-mobile-alt popover-dialog"></i>
+
+
+                            <i class="fas fa-phone-square phone popover-dialog"></i>
+
+
+                        </td>
+                        <td>2230</td>
+                        <td>Donner
+                            <i class="fas fa-download"></i>
+
+
+                        </td>
+                        <td>Frank</td>
+                        <td>0176 82339236 <i class="fas fa-times-circle deactivated "></i></td>
+                        <td>w</td>
+                        <td>Berlin</td>
+                        <td>Berlin</td>
+                        <td><i class="fab fa-delicious fa-lg jb"></i></td>
+                        <td>ger/eng</td>
+                        <td>0</td>
+                        <td>0 <i class="fas fa-star fa-sm"></i>
+
+                        </td>
+
+
+                    </tr>
+                    <tr class="table-danger">
+                        <td>
+                            <div class="form-box ">
+                                <input class="check" type="checkbox">
+                            </div>
+                        </td>
+                        <td><i class="far fa-envelope popover-dialog"></i>
+                            <i class="fas fa-mobile-alt popover-dialog"></i>
+
+
+                            <i class="fas fa-phone-square phone popover-dialog"></i>
+
+
+                        </td>
+                        <td>2230</td>
+                        <td>Donner
+                            <i class="fas fa-download"></i>
+
+
+                        </td>
+                        <td>Frank</td>
+                        <td>0176 82339236 <i class="fas fa-times-circle deactivated "></i></td>
+                        <td>w</td>
+                        <td>Berlin</td>
+                        <td>Berlin</td>
+                        <td><i class="fab fa-delicious fa-lg jb"></i></td>
+                        <td>ger/eng</td>
+                        <td>0</td>
+                        <td>0 <i class="fas fa-star fa-sm"></i>
+
+                        </td>
+
+
+                    </tr>
+                    <tr class="table-danger">
+                        <td>
+                            <div class="form-box ">
+                                <input class="check" type="checkbox">
+                            </div>
+                        </td>
+                        <td><i class="far fa-envelope popover-dialog"></i>
+                            <i class="fas fa-mobile-alt popover-dialog"></i>
+
+
+                            <i class="fas fa-phone-square phone popover-dialog"></i>
+
+
+                        </td>
+                        <td>2230</td>
+                        <td>Donner
+                            <i class="fas fa-download"></i>
+
+
+                        </td>
+                        <td>Frank</td>
+                        <td>0176 82339236 <i class="fas fa-times-circle deactivated "></i></td>
+                        <td>w</td>
+                        <td>Berlin</td>
+                        <td>Berlin</td>
+                        <td><i class="fab fa-delicious fa-lg jb"></i></td>
+                        <td>ger/eng</td>
+                        <td>0</td>
+                        <td>0 <i class="fas fa-star fa-sm"></i>
+
+                        </td>
+
+
+                    </tr>
+                    <tr class="table-danger">
+                        <td>
+                            <div class="form-box ">
+                                <input class="check" type="checkbox">
+                            </div>
+                        </td>
+                        <td><i class="far fa-envelope popover-dialog"></i>
+                            <i class="fas fa-mobile-alt popover-dialog"></i>
+
+
+                            <i class="fas fa-phone-square phone popover-dialog"></i>
+
+
+                        </td>
+                        <td>2230</td>
+                        <td>Donner
+                            <i class="fas fa-download"></i>
+
+
+                        </td>
+                        <td>Frank</td>
+                        <td>0176 82339236 <i class="fas fa-times-circle deactivated "></i></td>
+                        <td>w</td>
+                        <td>Berlin</td>
+                        <td>Berlin</td>
+                        <td><i class="fab fa-delicious fa-lg jb"></i></td>
+                        <td>ger/eng</td>
+                        <td>0</td>
+                        <td>0 <i class="fas fa-star fa-sm"></i>
+
+                        </td>
+
+
+                    </tr>
+                    <tr class="table-danger">
+                        <td>
+                            <div class="form-box ">
+                                <input class="check" type="checkbox">
+                            </div>
+                        </td>
+                        <td><i class="far fa-envelope popover-dialog"></i>
+                            <i class="fas fa-mobile-alt popover-dialog"></i>
+
+
+                            <i class="fas fa-phone-square phone popover-dialog"></i>
+
+
+                        </td>
+                        <td>2230</td>
+                        <td>Donner
+                            <i class="fas fa-download"></i>
+
+
+                        </td>
+                        <td>Frank</td>
+                        <td>0176 82339236 <i class="fas fa-times-circle deactivated "></i></td>
+                        <td>w</td>
+                        <td>Berlin</td>
+                        <td>Berlin</td>
+                        <td><i class="fab fa-delicious fa-lg jb"> </i></td>
+                        <td>ger/eng</td>
+                        <td>0</td>
+                        <td>0 <i class="fas fa-star fa-sm"></i>
 
                         </td>
 
@@ -588,18 +797,21 @@
 
     <script>
         function getDialogData() {
-            return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
+            return '<table cellpadding="0" cellspacing="0" border="none" style="padding-left:50px; border:none;">' +
+                '<th' +
+                '<td> <strong> Select one item </strong> </td>' +
+                '</th>' +
                 '<tr>' +
-                '<td>Full name:</td>' +
-                '<td>Jsd</td>' +
+                '<td><input type="radio" name="optradio"> </td>' +
+                '<td>Verified  <i class="fas fa-check-circle verfied"></i> </td>' +
                 '</tr>' +
                 '<tr>' +
-                '<td>Extension number:</td>' +
-                '<td>asd</td>' +
+                '<td><input type="radio" name="optradio"> </td>' +
+                '<td>doesnt exist  <i class="fas fa-times-circle deactivated "> </td>' +
                 '</tr>' +
                 '<tr>' +
-                '<td>Extra info:</td>' +
-                '<td>And any further details here (images etc)...</td>' +
+                '<td><input type="radio" name="optradio"> </td>' +
+                '<td>Unverified <i class="fas fa-question-circle activated"></i></td>' +
                 '</tr>' +
                 '</table>';
         }

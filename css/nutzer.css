@@ -1,4 +1,4 @@
-..tooltip {
+.tooltip {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
@@ -51,7 +51,7 @@
 }
 
 .verfied {
-    color: green;
+    color: rgb(105, 190, 105);
 }
 
 
@@ -68,23 +68,31 @@
 
 .input-sm {
     height: 30px;
+    background-image: url("../images/search-icon.png") !important;
+    background-position: 6px 6px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-left: 30px !important;
 }
 
-.vor-link {
-    color: black;
-    font-size: 11px;
+.Accent {
+    width: 100%;
+    overflow: auto;
 }
 
-.link {
-    color: black;
-    font-size: 11px;
-    text-decoration: underline;
+.round {
+    border-radius: 50px !important;
+    border-color: #ddd;
+    height: 22px;
+    line-height: 14px !important;
 }
-
-.table-container {}
 
 .phone {
-    color: rgb(131, 184, 96)
+    color: rgb(131, 184, 96);
+}
+
+.table {
+    font-size: 11px;
 }
 
 .table_1 {
@@ -98,4 +106,23 @@
 
 .tab-2 {
     width: 50px
+}
+
+.jb {
+    height: 25px;
+    width: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jb-1 {
+    height: 25px;
+    width: 25px;
+}
+
+.check {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
